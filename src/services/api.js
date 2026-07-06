@@ -16,3 +16,17 @@ export const getMostPopular = async () => {
   )
   return response.data.results
 }
+export const searchArticles = async (query) => {
+  const response = await axios.get(
+    `${BASE_URL}/search/v2/articlesearch.json?q=${query}&api-key=${API_KEY}`
+  )
+  return response.data.response.docs.map(doc => ({
+    title: doc.headline.main,
+    abstract: doc.abstract,
+    url: doc.web_url,
+    section: doc.section_name,
+    multimedia: doc.multimedia?.length > 0 
+      ? [{ url: `https://static01.nyt.com/${doc.multimedia[0].url}` }] 
+      : []
+  }))
+}

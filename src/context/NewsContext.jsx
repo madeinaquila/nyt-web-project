@@ -4,11 +4,13 @@ const NewsContext = createContext()
 
 export const NewsProvider = ({ children }) => {
   const [articles, setArticles] = useState([])
+  const [popular, setPopular] = useState([])
   const [loading, setLoading] = useState(false)
   const [section, setSection] = useState('home')
+  const [darkMode, setDarkMode] = useState(false)
 
   return (
-    <NewsContext.Provider value={{ articles, setArticles, loading, setLoading, section, setSection }}>
+    <NewsContext.Provider value={{ articles, setArticles, popular, setPopular, loading, setLoading, section, setSection, darkMode, setDarkMode }}>
       {children}
     </NewsContext.Provider>
   )
