@@ -1,16 +1,41 @@
-# React + Vite
+# New York Times Web Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Progetto sviluppato per il corso **React** del Master **Full Stack Development e Agenti AI** di [start2impact University](https://www.start2impact.it).
 
-Currently, two official plugins are available:
+## Descrizione
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Sito web che replica la home del New York Times, connesso alle API ufficiali NYT per mostrare notizie reali e aggiornate in tempo reale.
 
-## React Compiler
+## Funzionalità
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Hero article** — primo articolo in grande formato con immagine
+- **Grid notizie** — layout a due colonne con immagine e abstract
+- **Most Popular** — sidebar con gli 8 articoli più letti
+- **Dark mode** — toggle light/dark mode
+- **Ricerca articoli** — barra di ricerca con Article Search API
+- **Responsive** — layout adattivo per mobile e desktop
 
-## Expanding the ESLint configuration
+## Tecnologie
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 18
+- Vite
+- React Router
+- Axios
+- Context API
+- NYT API
+- Vercel
+
+## Link
+
+- **Live demo**: [nyt-web-project.vercel.app](https://nyt-web-project.vercel.app)
+- **Repository**: [github.com/madeinaquila/nyt-web-project](https://github.com/madeinaquila/nyt-web-project)
+
+## Avvio in locale
+
+Installa le dipendenze e avvia il server con `npm install` e poi `npm run dev`.
+
+Crea un file `.env` nella cartella principale con la tua API key del NYT: `VITE_NYT_API_KEY=la_tua_chiave`
+
+## Autore
+
+Valerio Aquilani
