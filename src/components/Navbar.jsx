@@ -54,7 +54,7 @@ function Navbar() {
             fontSize: '12px'
           }}
         >
-          {darkMode ? '☀️ Light' : '🌙 Dark'}
+          {darkMode ? 'Light' : 'Dark'}
         </button>
       </div>
 
@@ -62,7 +62,6 @@ function Navbar() {
         The New York Times
       </h1>
 
-      {/* BARRA DI RICERCA */}
       <form onSubmit={handleSearch} style={{ marginBottom: '12px' }}>
         <input
           type="text"
