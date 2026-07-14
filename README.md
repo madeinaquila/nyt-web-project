@@ -17,7 +17,7 @@ Sito web che replica la home del New York Times, connesso alle API ufficiali NYT
 
 ## Tecnologie
 
-- React 18
+- React 19
 - Vite
 - React Router
 - Axios
